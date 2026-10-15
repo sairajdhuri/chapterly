@@ -1,0 +1,42 @@
+[
+  {
+    "state": "desktop-empty",
+    "passes": 28,
+    "violations": []
+  },
+  {
+    "state": "confirmation-dialog",
+    "passes": 13,
+    "violations": []
+  },
+  {
+    "state": "desktop-review",
+    "passes": 31,
+    "violations": []
+  },
+  {
+    "state": "1440-review",
+    "passes": 31,
+    "violations": []
+  },
+  {
+    "state": "768-review",
+    "passes": 31,
+    "violations": []
+  },
+  {
+    "state": "390-review",
+    "passes": 31,
+    "violations": []
+  },
+  {
+    "state": "320-review",
+    "passes": 31,
+    "violations": []
+  },
+  {
+    "state": "320-long-word-review",
+    "passes": 31,
+    "violations": []
+  }
+]

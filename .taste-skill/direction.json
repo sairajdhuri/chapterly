@@ -1,0 +1,326 @@
+{
+ "version": 1,
+ "at": "2026-10-15T07:20:17.842Z",
+ "seed": 692022062,
+ "redraws": 1,
+ "input": {
+  "brief": "Chapterly: a free private chapter readability editor styled as a parchment literary journal, with amber annotations of the five hardest sentences.",
+  "sector": "consumer-app",
+  "tone": "editorial",
+  "have": [
+   "product-ui"
+  ],
+  "keep": [
+   "palette",
+   "type"
+  ],
+  "avoid": [],
+  "sections": [
+   "showcase",
+   "how-it-works",
+   "faq",
+   "footer"
+  ],
+  "direction": "page-is-the-object"
+ },
+ "imagery": "interface",
+ "allow": [],
+ "direction": {
+  "id": "page-is-the-object",
+  "name": "The page is the object",
+  "sectors": [
+   "restaurant",
+   "event",
+   "hospitality",
+   "culture",
+   "music",
+   "physical-product",
+   "ecommerce",
+   "nonprofit",
+   "education",
+   "personal-portfolio",
+   "consumer-app",
+   "other"
+  ],
+  "tones": [
+   "warm",
+   "playful",
+   "editorial"
+  ],
+  "needs": [],
+  "idea": "Find the printed or physical artefact that already exists in the subject's world and build the page as that thing. A wedding site is the invitation card. A restaurant is its menu. A conference is the ticket; a record is its sleeve; a shop is the receipt or the swing tag; an archive is a stack of tabbed folders; a course is the syllabus sheet. The artefact supplies everything a template would otherwise invent: its proportions, its typographic manners, its way of grouping information. Visitors recognise the object instantly, which is why these pages feel specific.",
+  "composition": "The first screen shows the artefact as a single filled panel (paper colour on a contrasting ground) centred or offset, with believable proportions: a card at 5:7, a ticket at about 2.2:1 with a notch cut by `clip-path`, a menu as a tall sheet. All primary content lives on it, set the way that object is set: centred and symmetrical for an invitation, in tidy aligned columns for a menu or ticket. The ground behind is a flat colour or one full-bleed photograph. As the page continues, each section is another piece of the same stationery: a second card, a tear-off stub, a folded panel, always filled shapes with real edges (straight, notched, scalloped, perforated by a dotted `border` of round dots at 4px or more), never outlined boxes. The footer is the back of the object.",
+  "typography": "Take the manners of the artefact: a bookish serif with small caps avoided, or a blunt condensed face for tickets and posters. Sizes stay within what print would use relative to the panel; the name is large on the panel, details are small and exact.",
+  "typeClasses": [
+   "serif-text",
+   "serif-display",
+   "slab",
+   "condensed-heavy",
+   "grotesk-tight"
+  ],
+  "colour": "Paper and ink plus the ground the paper sits on. Two or three flat colours in total, like a two-colour print job.",
+  "paletteTags": [
+   "two-tone",
+   "earth",
+   "light-neutral"
+  ],
+  "imagery": "Optional. One photograph behind the object, or small photographs placed on it like tipped-in plates. The object itself is the image.",
+  "sectionTags": [
+   "object-led",
+   "type-led",
+   "colour-field"
+  ],
+  "motion": "curtain-footer",
+  "richness": "Recognition. The shaped edges, the print-like alignment and the limited inks make a familiar object out of plain HTML.",
+  "pitfalls": "Choose an artefact that truly belongs to the subject, or it becomes costume. Shape the edges with fills and `clip-path`; an outlined rectangle with a thin border is not an object. Keep text sizes readable on a phone, where the object becomes full width with its shaped edge kept at top and bottom.",
+  "seenIn": [
+   "opl-sarah-matt-wedding",
+   "aww-mosbys-files",
+   "opl-the-deep-end",
+   "opl-weeksync",
+   "opl-le-petit-bleu",
+   "opl-archiv"
+  ],
+  "allow": []
+ },
+ "hero": {
+  "id": "striped-card-beside-room",
+  "name": "Striped card beside the room",
+  "archetype": "split",
+  "directions": [
+   "one-motif",
+   "page-is-the-object",
+   "split-stage"
+  ],
+  "needs": [],
+  "blueprint": "The viewport is split 50/50 with a 12px gap and 12px outer margins. The right half is one full-height photograph of the room, corners radiused 16px, `position: sticky` so it stays in view while the left half scrolls. The left half is a printed card: a flat paper-colour panel with the same 16px radius, and the subject's stripe (from its awning, label or ribbon) as the only ornament. Across the card's top runs a band 56px tall made of alternating bars of the single ink colour and paper, each bar 28px wide, built as a flex row of filled blocks. The same stripe returns as an 8px band above the footer and inside the button on hover. Under the band, centred: the wordmark about 300px wide, then a two-line headline in a light serif at clamp(40px, 3.6vw, 56px) in the ink colour, one supporting sentence at 17px held to 36ch, and the single action as a solid rectangular button. Three text links sit in one centred row at 15px, 28px above the card's bottom edge. One ink on paper; the photograph supplies every other colour.",
+  "mobile": "The photograph comes first at full width inside 12px margins, 48svh tall, with the 16px radius. The card follows and overlaps the photograph's bottom edge by 24px using a negative margin. Its striped band is 40px tall; below it the wordmark at 56% width, the headline at 8vw on two lines, the sentence and the button, all centred. The links wrap into the card's foot.",
+  "headline": "A warm two-line welcome of three to six words, up to about 18 characters per line at 3.6vw.",
+  "motion": "slow-crossfade",
+  "seenIn": [
+   "opl-le-petit-bleu",
+   "opl-zara-webb"
+  ]
+ },
+ "type": null,
+ "palette": null,
+ "photos": null,
+ "motion": {
+  "id": "index-preview",
+  "name": "Index with preview",
+  "description": "Rows of text are the navigation through the work; pointing at a row brings up its image in one fixed frame and dims the other rows. On touch screens each row shows its image inline instead. Fast and exact (about 240ms crossfade), no lag behind the pointer. Recipe: 'List with image preview' in references/motion.md."
+ },
+ "sections": [
+  {
+   "id": "showcase-square-plate-spare-text",
+   "role": "showcase",
+   "name": "Square plate, spare text",
+   "shape": "split",
+   "tags": [
+    "colour-field",
+    "photo-led"
+   ],
+   "directions": [
+    "split-stage",
+    "page-is-the-object",
+    "colour-chapters",
+    "editorial-report",
+    "one-motif",
+    "name-as-monument"
+   ],
+   "needs": [],
+   "blueprint": "One flat field split 50/50, at least 88svh tall. Left half: a single square photograph filling the half's width minus 40px margins, vertically centred, square corners. A large simple shape may be laid over it to turn the photograph into the object it stands for: a ring 86% of its width with a 6px stroke and a small solid dot at the centre makes a record; a notch cut by clip-path makes a ticket stub. Right half, a flex column with space-between: at the top a row of three plain text tabs at 18px (editions, years, variants), the active one in full ink and the others at 40%; in the middle the title, two to four words at 32–40px bold, with a 34ch description 48px below; along the bottom two filled rectangular cells side by side, each half the column wide and 72px tall, acting as the two actions, one in ink and one a tone off the field.",
+   "mobile": "The square photograph comes first at full width with 16px margins. The tabs sit under it as one row at 17px. Then the title at 28px, the description, and the two action cells stacked, each full width and 60px tall.",
+   "seenIn": [
+    "aww-paul-kalkbrenner"
+   ]
+  },
+  {
+   "id": "how-it-works-itinerary-on-a-slip",
+   "role": "how-it-works",
+   "name": "Itinerary on a slip",
+   "shape": "table",
+   "tags": [
+    "object-led",
+    "type-led"
+   ],
+   "directions": [
+    "page-is-the-object",
+    "type-only-statement",
+    "split-stage",
+    "quiet-instrument",
+    "borrowed-category"
+   ],
+   "needs": [],
+   "blueprint": "The process is printed as an itinerary or receipt. One paper-coloured slip 420–480px wide stands on a contrasting flat ground at columns 7–11; its bottom edge is a zigzag cut with clip-path and its top edge is straight. The heading, two to four words at clamp(40px, 4.4vw, 68px), sits in columns 1–5 with a 30ch paragraph, top-aligned with the slip. On the slip, in the text face at 16px with tabular figures: stages grouped under time headings that carry the order ('Monday', 'Midweek', 'Friday'), each heading in bold with 28px above it. Under a heading, two to four rows; each row has what happens on the left, a duration or time on the right, and a leader of round 4px dots between. The final row is inverted, paper-coloured text on a full-width ink bar 44px tall, and states the result: what the reader holds at the end and the total time.",
+   "mobile": "The heading and paragraph come first. The slip follows at full width minus 16px margins, keeping its zigzag bottom edge. Rows keep left text, dots and right value on one line; long descriptions wrap under the left text. The inverted final row stays full width.",
+   "seenIn": [
+    "opl-the-content-architecture",
+    "opl-lennys-newsletter-product-pass"
+   ]
+  },
+  {
+   "id": "faq-tabbed-index-cards",
+   "role": "faq",
+   "name": "Tabbed index cards",
+   "shape": "stack",
+   "tags": [
+    "object-led",
+    "colour-field"
+   ],
+   "directions": [
+    "page-is-the-object",
+    "specimen-catalogue",
+    "borrowed-category",
+    "loud-flat-poster",
+    "one-motif"
+   ],
+   "needs": [],
+   "blueprint": "Questions are filed like cards in a drawer. A heading of two to four words at about 4vw sits in columns 3–10. Beneath it, in the same columns, five or six filled panels are stacked so that each overlaps the one above, leaving 96px of every card showing. Each card has a tab on its top edge, 200px wide and 40px tall, stepping right by 150px per card, cut with `clip-path: polygon()` so card and tab are one filled shape. The cards rotate through two or three palette colours. The tab carries the topic in one or two words at 16px; the visible strip under it shows the question at 20px medium. Choosing a card expands it to show the answer at 17px over at most 50ch and pushes the cards below it down. One card is open at a time; the first is open on load.",
+   "mobile": "Cards run full width with the same overlap, 88px of each showing. Tabs shrink to 120px wide and step right by 48px per card. The open card expands in place with its answer at 16px and 20px padding, and the heading leads at 9vw.",
+   "seenIn": []
+  },
+  {
+   "id": "footer-row-of-tiles",
+   "role": "footer",
+   "name": "A footer of tiles",
+   "shape": "grid",
+   "tags": [
+    "dense",
+    "colour-field"
+   ],
+   "directions": [
+    "dense-tiles",
+    "colour-chapters",
+    "product-performs",
+    "contact-sheet",
+    "specimen-catalogue"
+   ],
+   "needs": [],
+   "blueprint": "The footer is the last two rows of a board: filled tiles with 8px gaps and 8–12px outer margins, every cell used. Upper row, each tile 220px tall: a statement tile in columns 1–4 with one sentence at 24px top-left and the legal text at 12px bottom-left; a navigation tile in columns 5–7 with a plain list at 16px; a tile in columns 8–9 giving the city and local time as text; an email tile in columns 10–12 with the address at 20px as a link, bottom-left. Lower row, 320px tall: a tile in the ink colour spanning columns 1–8 with the wordmark set large (about 9vw) and centred, and a tile in the accent colour in columns 9–12 with a two-to-four-word invitation top-left at 28px and an arrow, drawn as inline SVG with 4px strokes, in its bottom-right corner; the whole accent tile is a link.",
+   "mobile": "Two columns of tiles with 6px gaps: the wordmark tile full width first at 160px tall, the accent tile full width next, then navigation and email side by side, then time and statement. Every tile keeps 20px padding and top-left text.",
+   "seenIn": [
+    "aww-aspen-search",
+    "aww-oimachi"
+   ]
+  }
+ ],
+ "references": [
+  {
+   "id": "opl-the-deep-end",
+   "name": "The Deep End",
+   "url": "https://thedeepend.space",
+   "source": "One Page Love",
+   "kind": "event",
+   "score": 7.5,
+   "idea": "The whole site is one invitation card floating over ambient footage, which shrinks into a pinned corner ticket as scattered stills scroll past.",
+   "mood": [
+    "warm",
+    "intimate",
+    "hushed",
+    "analog"
+   ],
+   "archetype": "fullbleed-media-overlay",
+   "hero": "Full-bleed, dim, amber-toned video of a listening room: a modular synth and speaker at top, a person lying on a silk cushion in soft focus. Centred over it is a square-cornered panel about 55% of the viewport wide and 62% tall, a blurred brown-to-taupe wash. Inside, the three words of the title are spread along the top edge at left, centre and right in bold condensed caps. A small line-diagram logo sits below. Two left-aligned text blocks at 2.5vw in the same heavy condensed face, tightly leaded: five lines of event details, four of description. Bottom edge: credits left, an RSVP box centre, a small link right. No navigation.",
+   "type": "PP Neue York extra-bold condensed is the only face, used at essentially one size, 36px, in white with very tight leading; credits drop to about 12px. Mixed case with occasional all-caps lines and a raised underlined ordinal. Hierarchy comes from spacing and position alone.",
+   "colour": "#2b2216 #bda38b #c8874a #f1f1e9 #181818 — Warm browns and ambers lifted straight from the footage: dark walnut video, a taupe translucent card, then a flat tan page with honey-lit photos. White type only; no accent colour.",
+   "imagery": "Low-light cinematic video and stills of people lying with eyes closed, shallow focus, amber backlight, wood panelling. Square-cornered and at very different sizes, from small thumbnails to near full-height frames, placed off-grid on flat tan.",
+   "layout": "After the full-bleed opener the page becomes a flat tan field where photos are placed irregularly, one small at left, one mid-size near centre, one tall at right, with wide gaps. The invitation card stays pinned top-left. About four screens, no headings or sections.",
+   "sections": [
+    {
+     "role": "gallery",
+     "description": "Flat tan background. Images sit at irregular positions and scales with no shared grid: a small landscape still about 14% wide near the left edge, a mid-sized one about 16% wide lower and nearer the centre, then a large portrait frame about 26% wide and a full viewport tall near the right. One video frame returns nearly full-bleed between them. No captions; all text lives in the pinned card, which partly overlaps the images."
+    },
+    {
+     "role": "contact",
+     "description": "On scroll the invitation panel collapses to a card pinned in the top-left corner, about half the viewport wide and 22% tall, flush with the edges. It keeps the three-word title spread along its top, the logo, five lines of date and address, and the RSVP box centred on its bottom edge. Its fill is semi-transparent taupe with a blurred dark vignette, so photos passing beneath tint it."
+    }
+   ],
+   "steal": [
+    "Spread the words of a short title to the left, centre and right of a card's top edge so the name becomes its frame.",
+    "Set every line of an invitation in one heavy condensed face at one size and let line breaks and gaps create the hierarchy.",
+    "Shrink the hero card into a pinned corner ticket that keeps date, place and the RSVP button visible for the whole scroll."
+   ]
+  },
+  {
+   "id": "opl-weeksync",
+   "name": "WeekSync",
+   "url": "https://weeksync.app/",
+   "source": "One Page Love",
+   "kind": "saas",
+   "score": 7.1,
+   "idea": "The page is a paper coupon: a dotted cut line with a scissors icon frames the viewport, and on scroll the navigation rail is cut free while the rest of the sheet tilts and falls away.",
+   "mood": [
+    "playful",
+    "utilitarian",
+    "dry",
+    "hand-made"
+   ],
+   "archetype": "other: fixed-rail-and-top-statement",
+   "hero": "Taupe-grey field wrapped by a black dotted rounded-rectangle border inset 16px from every edge. A left rail about 26% wide holds, centred on its own axis, a small black logo glyph at the top, a two-line mono tagline and a text link in braces; four nav labels, each under a small empty circle, stack at the bottom of the rail. A scissors icon sits on the bottom dotted line where rail meets main area. The main area carries one four-line statement in medium grotesk at 3vw, flush left and flush top, ending in the first quarter of the height. The remaining three quarters are empty.",
+   "type": "Inter Medium at 43px with -0.05em tracking is used once, for the opening statement. Everything else (nav, card copy, counters, FAQ) is Red Hat Mono at 12 to 19px, centred in cards, with braces and italic underlines as state marks.",
+   "colour": "#cdc8c2 #000000 #f8f6f3 #dfe296 — Flat warm grey ground with black ink throughout. Cards alternate off-white and a pale acid yellow-green, the only colour, which appears solely as a card fill.",
+   "imagery": "Loose black brush-and-ink cartoons of anthropomorphic calendars, charts and buildings, scratchy and energetic, each placed alone in the centre of a pale yellow-green near-square card with large rounded corners.",
+   "layout": "A dotted-outline rail stays pinned in the left quarter for the whole page; content scrolls in the remaining three quarters as a two-column grid of near-square cards with 8px gaps, then becomes a single mono list for FAQ. Section titles are only tiny mono labels.",
+   "sections": [
+    {
+     "role": "other",
+     "description": "Scroll transition after the hero. The single dotted frame splits along a new vertical dotted line at the rail edge as the scissors travel up it; the right-hand piece of the sheet then rotates a few degrees and drops out of view, leaving the rail as its own dotted rectangle. The rail stays pinned while the first row of cards rises from the bottom edge into the vacated area."
+    },
+    {
+     "role": "features",
+     "description": "Two-column checkerboard of near-square cards about 510px wide with 24px corner radius and 8px gutters. An off-white card holds three centred lines of 13px mono copy with a small '1 of 3' counter beneath; its neighbour is a yellow-green card with one ink cartoon. The next row flips the order, so text and drawing swap sides all the way down. No icons, titles or buttons inside cards."
+    },
+    {
+     "role": "faq",
+     "description": "FAQ as a plain mono list across the right three quarters: a tiny centred label, then questions at 14px, each preceded by a small hollow circle with about 35px between rows. The open item gets a filled dot, an italic underlined question and an indented three-line answer. No dividers, boxes or chevrons; the same hollow and filled circles mark the active item in the rail."
+    }
+   ],
+   "steal": [
+    "Give the page a physical metaphor that also does layout work: a dotted cut line frames the viewport, then separates the nav rail on scroll.",
+    "Alternate text-only and illustration-only cards in a checkerboard, flipping sides each row, instead of packing icon, title and copy into every card.",
+    "Use hollow and filled circles as the only state marker for both navigation and accordion items."
+   ]
+  },
+  {
+   "id": "opl-proooof",
+   "name": "PROOOOF",
+   "url": "https://proooof.app",
+   "source": "One Page Love",
+   "kind": "consumer-app",
+   "score": 7.4,
+   "idea": "The product's output is the page: a wall of photos each wearing its coloured EXIF strip, with all the copy folded into one small floating card.",
+   "mood": [
+    "playful",
+    "photographic",
+    "compact",
+    "nerdy"
+   ],
+   "archetype": "other: floating-card-over-image-wall",
+   "hero": "The whole viewport is a six-column masonry of photographs on a warm off-white ground with about 15px gutters, columns offset vertically so rows never line up. Each photo has a flat strip fused to its bottom edge carrying tiny monospaced capture data, every strip a different solid colour (black, red, orange, yellow, violet, green). Dead centre floats a white card about 380px wide and 410px tall with roughly 28px corner radius and a soft shadow. It contains an extended wordmark with chained O's, a two-row accordion with the first row open, an App Store badge and a monospaced line of links. There is no navigation.",
+   "type": "An extended, heavy wordmark with interlocked O's is the only display type. Card text is Wintyr VF at about 14-16px, medium weight for accordion headings. EXIF strips and footer links are monospace at roughly 8-13px. No headline anywhere.",
+   "colour": "#f3eee9 #fafafa #191818 #ff6a2b #f7c531 #5a4fcf — Colour comes from the photographs and the saturated caption strips, one hue per photo. Card and gutters stay off-white; a final panel flips to near-black with grey characters.",
+   "imagery": "Casual travel, food, pet and concert photos in mixed portrait and landscape crops, square corners, ungraded, tiled edge to edge. The page ends on an ASCII-art rendering of a hand holding a camera.",
+   "layout": "Effectively a single screen: the photo wall sits behind a centred card that carries every word. Six columns on desktop, two on mobile where the card widens to nearly full width. The only second scene is a dark, inset ASCII panel.",
+   "sections": [
+    {
+     "role": "features",
+     "description": "All product copy lives in the centred card as an accordion: a row with heading left and chevron right, a hairline divider, the open panel's four-line paragraph, a centred store badge, another divider, a collapsed second row, then a small monospaced line with a version number and underlined links. The card stays put while the wall remains visible on all four sides."
+    },
+    {
+     "role": "gallery",
+     "description": "Each tile is a photo with a data strip attached below: two or three rows of monospaced text, four values spread evenly across the first row, date and time at opposite ends of the second, maker and model on the third. Strip and text colours change per tile, for example yellow on black, black on yellow, white on violet, so a uniform grid looks varied."
+    },
+    {
+     "role": "cta",
+     "description": "The closing panel is a near-black rectangle inset with wide margins and filled edge to edge with rows of grey ASCII characters that resolve into a picture of a hand gripping a camera. One line of tiny monospaced uppercase text sits at the exact centre as the call to action. No button and no logo."
+    }
+   ],
+   "steal": [
+    "Show the product's output at wall scale as the background and confine all copy to one small card on top of it.",
+    "Give every repeated tile its own flat accent colour for the caption strip so a strict grid reads as lively.",
+    "Hold the explanatory copy in an accordion inside the hero card so the page needs no scrolling."
+   ]
+  }
+ ]
+}

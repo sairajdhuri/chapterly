@@ -1,0 +1,73 @@
+{
+  "url": "http://127.0.0.1:3100",
+  "checks": [
+    "Empty workspace passes automated WCAG accessibility checks",
+    "FAQ toggles with pointer and keyboard",
+    "Empty analysis validates inline and focuses the editor",
+    "Analysis preserves paragraphs, dialogue, repeated sentences, and counters",
+    "A sentence note selects and focuses its exact source passage",
+    "Editing invalidates stale results and preserves the manuscript",
+    "Cancel, Escape, and confirmation protect draft replacement",
+    "Sample analysis displays five notes, five highlights, and a numeric score",
+    "Desktop, tablet, mobile, and small mobile have no horizontal overflow",
+    "Reduced motion disables smooth scrolling and preserves analysis",
+    "The manuscript has a visible keyboard focus outline",
+    "An unbroken word stays inside the mobile manuscript and sentence notes",
+    "No React key warnings, hydration errors, or application exceptions"
+  ],
+  "accessibility": [
+    {
+      "state": "desktop-empty",
+      "passes": 28,
+      "violations": []
+    },
+    {
+      "state": "confirmation-dialog",
+      "passes": 13,
+      "violations": []
+    },
+    {
+      "state": "desktop-review",
+      "passes": 31,
+      "violations": []
+    },
+    {
+      "state": "1440-review",
+      "passes": 31,
+      "violations": []
+    },
+    {
+      "state": "768-review",
+      "passes": 31,
+      "violations": []
+    },
+    {
+      "state": "390-review",
+      "passes": 31,
+      "violations": []
+    },
+    {
+      "state": "320-review",
+      "passes": 31,
+      "violations": []
+    },
+    {
+      "state": "320-long-word-review",
+      "passes": 31,
+      "violations": []
+    }
+  ],
+  "consoleErrors": [
+    {
+      "text": "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+      "url": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono&family=EB+Garamond:ital@0;1&family=Inter:wght@400;500;600&display=swap"
+    }
+  ],
+  "pageErrors": [],
+  "failedRequests": [
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono&family=EB+Garamond:ital@0;1&family=Inter:wght@400;500;600&display=swap",
+      "error": "net::ERR_NETWORK_ACCESS_DENIED"
+    }
+  ]
+}
